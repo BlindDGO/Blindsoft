@@ -9,6 +9,13 @@ body{
     height:100%;
 	width:100%;
 }
+h2{
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 1.2;
+	margin-bottom: .5rem;
+}
+
 
 /* .back {
 	width:100%;
@@ -45,7 +52,8 @@ width: 100%;
 }
 
 .logo{
-	padding-top: 0px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 width: 150px;
 height: 60px;
 }
@@ -53,19 +61,32 @@ height: 60px;
 	width: 100%;
 	}
 
-.hero{
-	background: url('img/backgroundlogo.gif') no-repeat center;
-	background-size: auto;
-	padding: 240px 0px;
-	margin-top: 0.2rem;
+.hero {
+	/* background: url('img/backgroundlogo.gif'); */
+	/* background-size: auto;
+	padding: 240px 0px; */
+
+	/* background-size: cover;
+	background-position: 50% 50%;  */
+	height: auto;
+	width: 100%;
+
 	animation-name: logointro; /* Nombre de la animación */
-		animation-duration: 3s; /* Duración de la animación */
-		animation-iteration-count: 1; /* Es posible que sea infinite */
-		/* animation-direction: alternate; De esta forma la animación se invertirá al terminar */
-		animation-timing-function: ease-in-out; /* Curva de velocidad de la animación */
+	animation-duration: 3s; /* Duración de la animación */
+	animation-iteration-count: 1; /* Es posible que sea infinite */
+	/* animation-direction: alternate; De esta forma la animación se invertirá al terminar */
+	animation-timing-function: ease-in-out; /* Curva de velocidad de la animación */
+
+
+}
+.hero-div {
+	margin: 0px 30px 30px 30px;
+	width: 45%;
+	margin: auto;
+	padding-top: 60px;
 }
 
-.hero h1 span{
+/* .hero h1 span{
 	display: block;
 }
 .hero h1{
@@ -85,7 +106,7 @@ height: 60px;
 	margin-top: 10px;
 	font-weight: bold;
 	color: white;
-}
+} */
 /* projects */
 
 .projects{
@@ -138,8 +159,7 @@ height: 60px;
 
 	.HoldVideo {
 		margin-top: 60px;
-		opacity: 1;
-		
+		opacity: 1;	
 	}
 
 	#animationDemo {
@@ -177,7 +197,6 @@ height: 60px;
 	  }
 
 	.SteamWidget {
-		margin-top: 60px;
 		position: relative;
 		padding-bottom: 56.25%;
 		padding-top: 30px;
@@ -193,7 +212,52 @@ height: 60px;
 		left: 0;
 		width: 100%;
 		height: 100%;
+
 		}
+
+		.Widget {
+			margin-top: 60px;
+			margin-right: 30px;
+			margin-left: 30px;
+			/* position: relative; */
+			height: 0px;
+			padding-bottom: 416px;
+			/* overflow: hidden; */
+			/* display:block; */
+			width: 100%;
+			height: auto;
+			}
+			.Widget iframe,
+			.Widget object,
+			.Widget embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+	
+			}
+
+			.widgetmargin{
+				margin-right: 15%;
+				margin-left: 15%;
+			}
+
+			.mmy-1 {
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+				
+	
+	.WidgetAnim
+ 	{
+		animation-name: resize; /* Nombre de la animación */
+		animation-duration: 3s; /* Duración de la animación */
+		animation-iteration-count: 1; /* Es posible que sea infinite */
+		/* animation-direction: alternate; De esta forma la animación se invertirá al terminar */
+		animation-timing-function: ease-in-out; /* Curva de velocidad de la animación */
+ 	}
+		
 
 
 
@@ -202,14 +266,15 @@ height: 60px;
 
 .about2 {
 	padding: 10px 0;
-	display: grid;
+	/* display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(4, .2fr);
+	grid-template-rows: repeat(4, .2fr); */
 	animation-name: resize; /* Nombre de la animación */
 	animation-duration: 3s; /* Duración de la animación */
 	animation-iteration-count: 1; /* Es posible que sea infinite */
 	/* animation-direction: alternate; De esta forma la animación se invertirá al terminar */
 	animation-timing-function: ease-in-out; /* Curva de velocidad de la animación */
+	margin-top: 1.5rem;
 }
 
 .about2 ul{
@@ -224,9 +289,11 @@ height: 60px;
 }
 
 .skills{
-	grid-row: 3/3;
+	/* grid-row: 3/3;
 	grid-column: 3/3;
-	text-align: center;
+ */
+ text-align: center;
+ width: 20%;
 
 
 }
@@ -389,13 +456,32 @@ height: 60px;
 			width: 150px;
 			height: 60px;
 			}
-			.hero{
-				background: url('img/backgroundlogo.gif');
-				background-size: auto;
-				padding: 240px 0px;
-				margin-top: 0.2rem;
-
+			.hero {
+				/* background: url('img/backgroundlogo.gif'); */
+				/* background-size: auto;
+				padding: 240px 0px; */
+			
+				/* background-size: cover;
+				background-position: 50% 50%;  */
+				height: auto;
+		
 			}
+
+			.hero-div {
+				padding: 0px 30px 30px 30px;
+				width: 100%;
+				margin: 0px;
+			}
+	.skills{
+	width: 80%;
+	}
+
+	.widgetmargin{
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+			
+
 
 	}
 	@media (max-width: 1600px) {
